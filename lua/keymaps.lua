@@ -22,6 +22,8 @@ map("n", "<leader>x", ":close<CR>")
 map("n", "<leader>.", ":sp term://powershell.exe -nologo<CR>")
 
 -- window navigation
+map("n", "<Tab>", ":bnext<CR>")
+map("n", "<S-Tab>", ":bprev<CR>")
 map("n", "<Left>", "<C-w>h")
 map("n", "<Right>", "<C-w>l")
 map("n", "<Up>", "<C-w>k")
@@ -52,3 +54,6 @@ vim.api.nvim_create_autocmd('filetype', {
     -- bind('D', 'd')
   end
 })
+
+-- notes
+map("n", "<leader>o", ":Vex! c:/users/pedro/documents/Notes<CR>")
