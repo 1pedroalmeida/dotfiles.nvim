@@ -31,7 +31,7 @@ map("n", "<Down>", "<C-w>j")
 
 -- netrw
 map("n", "<C-n>", ":Ex<CR>")
-map("n", "<S-n>", ":Vex!<CR>")
+map("n", "<S-n>", ":Vex<CR>")
 
 vim.api.nvim_create_autocmd('filetype', {
   pattern = 'netrw',

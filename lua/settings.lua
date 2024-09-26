@@ -6,7 +6,8 @@ vim.scriptencoding = "utf-8"
 g.mapleader = " "
 g.maplocalleader = " "
 g.netrw_keepdir = 0
-g.netrw_banner = 1
+g.netrw_banner = 0
+g.netrw_winsize = 37
 
 o.wrap = true
 o.ignorecase = true
