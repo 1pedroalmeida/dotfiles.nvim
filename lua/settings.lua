@@ -8,6 +8,7 @@ g.maplocalleader = " "
 g.netrw_keepdir = 0
 g.netrw_banner = 0
 g.netrw_winsize = 37
+g.netrw_browse_split = 0
 
 o.wrap = true
 o.ignorecase = true

@@ -30,7 +30,8 @@ $ git clone https://github.com/1pedroalmeida/dotfiles.nvim $HOME\AppData\Local\n
 | Keymap | Mode | Description |
 | ------ | ------ | ------ |
 | `<C-n>` | normal | Open netrw |
-| `<S-n>` | normal | Open netrw on a split window |
+| `<S-n>` | normal | Open netrw as a side bar |
+| `<leader>n` | normal | Open netrw in a split window |
 | `<Tab>` | normal | Cycle to the next buffer |
 | `<S-Tab>` | normal | Cycle to the previous buffer |
 | `<leader>.` | normal | Open powershell terminal on a split window |
