@@ -35,7 +35,7 @@ $ git clone https://github.com/1pedroalmeida/dotfiles.nvim $HOME\AppData\Local\n
 | `<Tab>` | normal | Cycle to the next buffer |
 | `<S-Tab>` | normal | Cycle to the previous buffer |
 | `<leader>.` | normal | Open powershell terminal on a split window |
-| `<left>` | normal | Focus on buffer to the left |
+| `<left> | H` | normal | Focus on buffer to the left |
 | `<right>` | normal | Focus on buffer to the right |
 | `<up>` | normal | Focus on buffer to the top |
 | `<down>` | normal | Focus on buffer to the bottom |
