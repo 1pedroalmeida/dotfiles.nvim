@@ -7,7 +7,7 @@ if status then
     -- Telescope
     map("n", "<leader>ff", telescope.find_files)
     map("n", "<leader>fg", telescope.live_grep)
-    map("n", "<leader>fb", telescope.buffers)
+    map("n", "<leader>b", telescope.buffers)
     map("n", "<leader>fh", telescope.help_tags)
     map("n", "<leader>fs", telescope.git_status)
     map("n", "<leader>fc", telescope.git_commits)
@@ -16,7 +16,7 @@ else
 end
 
 -- buffers
-map("n", "<leader>x", ":close<CR>")
+map("n", "<leader>x", ":bd<CR>")
 
 -- terminal
 map("n", "<leader>.", ":sp term://powershell.exe -nologo<CR>")
@@ -42,11 +42,10 @@ map("n", "<S-n>", function ()
 end)
 
 map("n", "<leader>n", function ()
-    vim.g.netrw_browse_split = 0
-    vim.cmd("Vex!")
+    -- vim.g.netrw_browse_split = 0
+    -- vim.cmd("Vex!")
+    vim.cmd("vsp")
 end)
--- map("n", "<C-n>", ":20Ex<CR>")
--- map("n", "<S-n>", ":20Vex<CR>")
 
 vim.api.nvim_create_autocmd('filetype', {
     pattern = 'netrw',
