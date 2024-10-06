@@ -36,9 +36,9 @@ $ git clone https://github.com/1pedroalmeida/dotfiles.nvim $HOME\AppData\Local\n
 | `<S-Tab>` | normal | Cycle to the previous buffer |
 | `<leader>.` | normal | Open powershell terminal on a split window |
 | `<left> | H` | normal | Focus on buffer to the left |
-| `<right>` | normal | Focus on buffer to the right |
-| `<up>` | normal | Focus on buffer to the top |
-| `<down>` | normal | Focus on buffer to the bottom |
+| `<right> | L` | normal | Focus on buffer to the right |
+| `<up> | K` | normal | Focus on buffer to the top |
+| `<down> | J` | normal | Focus on buffer to the bottom |
 | `gcc` | normal | Comment out current line |
 | `gc` | visual/v-line | Comment out selected region |
 | `<leader>ff` | normal | Open telescope's find_files fuzzy finder |

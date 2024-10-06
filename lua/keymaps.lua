@@ -27,8 +27,11 @@ map("n", "<S-Tab>", ":bprev<CR>")
 map("n", "<Left>", "<C-w>h")
 map("n", "H", "<C-w>h")
 map("n", "<Right>", "<C-w>l")
+map("n", "L", "<C-w>l")
 map("n", "<Up>", "<C-w>k")
+map("n", "K", "<C-w>k")
 map("n", "<Down>", "<C-w>j")
+map("n", "J", "<C-w>j")
 
 -- netrw
 map("n", "<C-n>", function ()
@@ -70,4 +73,4 @@ vim.api.nvim_create_autocmd('filetype', {
 })
 
 -- notes
-map("n", "<leader>o", ":Vex! c:/users/prvma/documents/Notes<CR>")
+map("n", "<leader>o", ":Vex! c:/users/pedro/documents/Notes<CR>")
