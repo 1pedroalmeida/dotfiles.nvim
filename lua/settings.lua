@@ -28,3 +28,4 @@ o.title = true
 o.termguicolors = true
 o.splitright = true
 o.splitbelow = true
+o.shadafile = "NONE"
