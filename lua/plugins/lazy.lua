@@ -94,13 +94,17 @@ require("lazy").setup({
             end
         },
         {
-            "williamboman/mason.nvim",
+            "mason-org/mason.nvim",
             config = function()
                 require("mason").setup()
             end
         },
         {
-            "williamboman/mason-lspconfig.nvim",
+            "mason-org/mason-lspconfig.nvim",
+            dependencies = {
+                { "mason-org/mason.nvim", opts = {} },
+                "neovim/nvim-lspconfig",
+            },
             config = function()
                 local lsp_capabilities = require('cmp_nvim_lsp').default_capabilities()
 
@@ -149,6 +153,7 @@ require("lazy").setup({
         },
         {
             "lewis6991/gitsigns.nvim",
+            lazy = true, -- fix
             config = function ()
                 require('gitsigns').setup {
                     signs = {
@@ -194,13 +199,13 @@ require("lazy").setup({
                 }
             end
         },
-    "neovim/nvim-lspconfig",
-    "hrsh7th/cmp-nvim-lsp",
-    "nvim-treesitter/nvim-treesitter",
-},
--- Configure any other settings here. See the documentation for more details.
--- colorscheme that will be used when installing plugins.
-install = { colorscheme = { "habamax" } },
--- automatically check for plugin updates
-checker = { enabled = true },
+        "neovim/nvim-lspconfig",
+        "hrsh7th/cmp-nvim-lsp",
+        "nvim-treesitter/nvim-treesitter",
+    },
+    -- Configure any other settings here. See the documentation for more details.
+    -- colorscheme that will be used when installing plugins.
+    install = { colorscheme = { "habamax" } },
+    -- automatically check for plugin updates
+    checker = { enabled = true },
 })
