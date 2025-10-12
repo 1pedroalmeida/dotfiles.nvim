@@ -48,3 +48,11 @@ $ git clone https://github.com/1pedroalmeida/dotfiles.nvim $HOME\AppData\Local\n
 | `<leader>fs` | normal | Open telescope's git status |
 | `<leader>fc` | normal | Open telescope's git commits |
 | `<leader>x` | normal | Close current buffer |
+
+## Useful builtin keymaps
+
+| Keymap | Mode | Description |
+| ------ | ------ | ------ |
+| `<C-q>` | normal | Block Visual Mode |
+| `<C-f>` | command | Open command history in a split window |
+| `g_` | normal | Go to the end of the current line |
