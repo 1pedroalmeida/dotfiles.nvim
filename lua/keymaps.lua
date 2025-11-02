@@ -74,3 +74,6 @@ vim.api.nvim_create_autocmd('filetype', {
 
 -- notes
 map("n", "<leader>o", ":Vex! c:/users/pedro/documents/Notes<CR>")
+
+-- diagnostics 
+map("n", "<leader>d", ":lua vim.diagnostic.setqflist()<CR>")

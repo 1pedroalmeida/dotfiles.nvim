@@ -29,3 +29,17 @@ o.termguicolors = true
 o.splitright = true
 o.splitbelow = true
 o.shadafile = "NONE"
+o.signcolumn = "yes"
+
+-- Apontamentos uni
+--
+local group = vim.api.nvim_create_augroup("ApFilesCmd", { clear = true })
+
+vim.api.nvim_create_autocmd("BufReadPost", {
+  group = group,
+  pattern = "*.ap",
+  callback = function()
+    vim.cmd("hi custom guifg=DarkYellow")
+    vim.cmd("syn match custom /\\[\\zs[^\\]]\\+\\ze\\]/")
+  end,
+})
