@@ -56,4 +56,5 @@ $ git clone https://github.com/1pedroalmeida/dotfiles.nvim $HOME\AppData\Local\n
 | ------ | ------ | ------ |
 | `<C-q>` | normal | Block Visual Mode |
 | `<C-f>` | command | Open command history in a split window |
-| `g_` | normal | Go to the end of the current line |
+| `_` | normal | Jump to the start of the line. Prefix with `g` to jump to the end |
+| `<C-w>d` | normal | Open diagnostic at the cursor position in a floating window |
