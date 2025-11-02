@@ -48,6 +48,7 @@ $ git clone https://github.com/1pedroalmeida/dotfiles.nvim $HOME\AppData\Local\n
 | `<leader>fs` | normal | Open telescope's git status |
 | `<leader>fc` | normal | Open telescope's git commits |
 | `<leader>x` | normal | Close current buffer |
+| `<leader>d` | normal | Show file diagnostics within a quickfix split list |
 
 ## Useful builtin keymaps
 
