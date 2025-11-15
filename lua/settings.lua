@@ -39,7 +39,11 @@ vim.api.nvim_create_autocmd("BufReadPost", {
   group = group,
   pattern = "*.ap",
   callback = function()
-    vim.cmd("hi custom guifg=DarkYellow")
-    vim.cmd("syn match custom /\\[\\zs[^\\]]\\+\\ze\\]/")
+    vim.cmd("hi customYellow guifg=DarkYellow")
+    vim.cmd("syn match customYellow /\\[\\zs[^\\]]\\+\\ze\\]/")
+    vim.cmd("hi customOrange guifg=DarkOrange gui=bold")
+    vim.cmd("syn match customOrange /Σ/")
+    vim.cmd("hi customGrey guifg=Grey gui=bold")
+    vim.cmd("syn match customGrey /[⊆∈∩∪]/")
   end,
 })
